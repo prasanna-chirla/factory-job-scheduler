@@ -1,0 +1,14 @@
+{
+  "anomaly_case_count": 5,
+  "fully_scheduled_order_count": 500,
+  "inventory_lot_count": 600,
+  "late_order_count": 2,
+  "makespan_hours": 1371.3,
+  "on_time_rate": 0.996,
+  "order_count": 500,
+  "scheduled_operation_count": 2000,
+  "seed": 20261022,
+  "total_late_days": 7,
+  "unscheduled_operation_count": 0,
+  "unscheduled_order_count": 0
+}

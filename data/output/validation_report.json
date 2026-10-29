@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "ground_truth_evaluation": "PASS",
+    "master_and_transaction_integrity": "PASS",
+    "schedule_hard_constraints": "PASS"
+  },
+  "issues": {
+    "data": [],
+    "schedule": []
+  },
+  "row_counts": {
+    "changeover_matrix": 16,
+    "inventory_balances": 600,
+    "inventory_lots": 600,
+    "inventory_transactions": 2000,
+    "labor_calendars": 288,
+    "labor_requirements": 400,
+    "machine_calendars": 5760,
+    "machine_downtime": 39,
+    "machine_eligibility": 4000,
+    "machines": 40,
+    "material_requirements": 2000,
+    "materials": 200,
+    "operation_schedules": 2000,
+    "operations": 400,
+    "order_operations": 2000,
+    "production_orders": 500,
+    "products": 100,
+    "routings": 100,
+    "tool_availability": 288,
+    "tool_requirements": 200,
+    "tools": 2,
+    "unscheduled_operations": 0
+  },
+  "seed": 20261022,
+  "status": "PASS"
+}

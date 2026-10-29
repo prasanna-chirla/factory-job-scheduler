@@ -1,0 +1,5 @@
+{
+  "classification_note": "PROVEN_INFEASIBLE denotes a hard bound such as no eligible machine, excessive non-preemptive duration, or insufficient total stock. SEARCH_LIMIT_OR_HEURISTIC_FAILURE means this greedy search did not find a slot within its horizon; it is not proof that no schedule exists.",
+  "status": "NONE",
+  "unscheduled_operations": []
+}

@@ -1,0 +1,110 @@
+{
+  "counts": {
+    "changeover_matrix": 16,
+    "inventory_balances": 600,
+    "inventory_lots": 600,
+    "inventory_transactions": 2000,
+    "labor_calendars": 288,
+    "labor_requirements": 400,
+    "machine_calendars": 5760,
+    "machine_downtime": 39,
+    "machine_eligibility": 4000,
+    "machines": 40,
+    "material_requirements": 2000,
+    "materials": 200,
+    "operation_schedules": 2000,
+    "operations": 400,
+    "order_operations": 2000,
+    "production_orders": 500,
+    "products": 100,
+    "routings": 100,
+    "tool_availability": 288,
+    "tool_requirements": 200,
+    "tools": 2,
+    "unscheduled_operations": 0
+  },
+  "files": [
+    {
+      "path": "master/changeover_matrix.csv",
+      "sha256": "ae7b159ab680b3fd4c238de47471ea93985c9e7e104cf4c421fccc215dd7395a"
+    },
+    {
+      "path": "master/labor_calendars.csv",
+      "sha256": "cb93943f92cb353b5487d39f6fa5403a73c800d738e7d4a59a0279be38d2d04f"
+    },
+    {
+      "path": "master/labor_requirements.csv",
+      "sha256": "182ece790ddfa04223ceead1fe3c8d63add8ddca4c370f1277e4735f11b25f1d"
+    },
+    {
+      "path": "master/machine_calendars.csv",
+      "sha256": "11016035a000ddb995a4472ee9c17bd815f8462e98a69da83ac17ff6fa60aeaa"
+    },
+    {
+      "path": "master/machine_eligibility.csv",
+      "sha256": "1e866650ef4e15c6f79ab252654e63421bce0f319b75ea6200b6b82717aeee86"
+    },
+    {
+      "path": "master/machines.csv",
+      "sha256": "b0c7340e9728b5a36b5faaebdc160dae4af12365326d1a221651d124f886b893"
+    },
+    {
+      "path": "master/materials.csv",
+      "sha256": "cd661674c25986a5264498915d42b5007d56020472cdfce290efb21a9e09d6b7"
+    },
+    {
+      "path": "master/operations.csv",
+      "sha256": "40be258a1c516904c6284593054d2852f91dfdd8aa32f8ee43667d993ba43bf6"
+    },
+    {
+      "path": "master/products.csv",
+      "sha256": "ea3838af14f1ad7155fd340eda35d546bccf2b835c38ef49a08d69d6e0d79c2f"
+    },
+    {
+      "path": "master/routings.csv",
+      "sha256": "56fb9641bfde37ca75aa4340c3707af811cd80a176b1668cccdce8b74aa5df4b"
+    },
+    {
+      "path": "master/tool_availability.csv",
+      "sha256": "695d193192a0dfa7fdbd819730715117e5ec8c4dce0a313e0f76f22f7da07572"
+    },
+    {
+      "path": "master/tool_requirements.csv",
+      "sha256": "f6fca8475784ff1cfedd8d5843d4370ae455b5db4a1a691ff09b5d81f2d89ee4"
+    },
+    {
+      "path": "master/tools.csv",
+      "sha256": "5135aabc0e5ed04ddce27e0cc56b18d9fc5a4a63a9fdc7ca353fcc2813615f89"
+    },
+    {
+      "path": "transactions/inventory_lots.csv",
+      "sha256": "e9b963c1330f174b283c251913614d0186ddfeed9b1e6270287a96c546b7bcc0"
+    },
+    {
+      "path": "transactions/inventory_transactions.csv",
+      "sha256": "83e6d8569c0f02de91f844ddd8e8ecdcdba882679ad451b394e110a4ccc78d89"
+    },
+    {
+      "path": "transactions/machine_downtime.csv",
+      "sha256": "28927de305c955d70692877c4406fcfde7be340a549131e0be50278f04319c9d"
+    },
+    {
+      "path": "transactions/material_requirements.csv",
+      "sha256": "dee1b681c3d4b5b781c3c9d50a942b343da63c19516049f35c0c315b07310b11"
+    },
+    {
+      "path": "transactions/order_operations.csv",
+      "sha256": "6ec125a61e5a90f60214e7522ae92c03e57b7dc3e32fb3bbb13e7e499b656646"
+    },
+    {
+      "path": "transactions/production_orders.csv",
+      "sha256": "a517214f5858b9d38d0c169809f020f595d0d3265f7bbc910ef8eca572b4893c"
+    },
+    {
+      "path": "transactions/reschedule_events.csv",
+      "sha256": "7776ac10124995a3f880aaa1b3e46508533a8a9567638f20df1b1a2bfd37b704"
+    }
+  ],
+  "seed": 20261022,
+  "synthetic_only": true
+}

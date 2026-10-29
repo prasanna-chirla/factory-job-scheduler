@@ -1,0 +1,98 @@
+{
+  "failed_count": 0,
+  "passed_count": 5,
+  "results": [
+    {
+      "applicable": true,
+      "detected_constraint": "NO_MACHINE_OVERLAP",
+      "detected_violation": true,
+      "expected_constraint": "NO_MACHINE_OVERLAP",
+      "issue_type": "MACHINE_OVERLAP",
+      "messages": [
+        "SCH-2026-000002: overlaps SCH-2026-000001 on MACH-001"
+      ],
+      "scenario_id": "EDGE-001",
+      "scenario_status": "PASS",
+      "test_passed": true,
+      "witness": {
+        "machine_id": "MACH-001",
+        "schedule_ids": [
+          "SCH-2026-000001",
+          "SCH-2026-000002"
+        ]
+      }
+    },
+    {
+      "applicable": true,
+      "detected_constraint": "ROUTING_PRECEDENCE",
+      "detected_violation": true,
+      "expected_constraint": "ROUTING_PRECEDENCE",
+      "issue_type": "PRECEDENCE_VIOLATION",
+      "messages": [
+        "SCH-2026-001630: precedence violation after SCH-2026-001629"
+      ],
+      "scenario_id": "EDGE-002",
+      "scenario_status": "PASS",
+      "test_passed": true,
+      "witness": {
+        "predecessor": "SCH-2026-001629",
+        "successor": "SCH-2026-001630"
+      }
+    },
+    {
+      "applicable": true,
+      "detected_constraint": "MATERIAL_AVAILABLE_BEFORE_START",
+      "detected_violation": true,
+      "expected_constraint": "MATERIAL_AVAILABLE_BEFORE_START",
+      "issue_type": "MATERIAL_EARLY_CONSUMPTION",
+      "messages": [
+        "SCH-2026-000001: material MAT-0096 unavailable at operation start"
+      ],
+      "scenario_id": "EDGE-003",
+      "scenario_status": "PASS",
+      "test_passed": true,
+      "witness": {
+        "requirement_id": "REQ-ORD-2026-000037-01",
+        "schedule_id": "SCH-2026-000001"
+      }
+    },
+    {
+      "applicable": true,
+      "detected_constraint": "MACHINE_CALENDAR_COVERAGE",
+      "detected_violation": true,
+      "expected_constraint": "MACHINE_CALENDAR_COVERAGE",
+      "issue_type": "OUTSIDE_SHIFT",
+      "messages": [
+        "SCH-2026-000001: outside available machine calendar"
+      ],
+      "scenario_id": "EDGE-004",
+      "scenario_status": "PASS",
+      "test_passed": true,
+      "witness": {
+        "proposed_start_at": "2026-01-10T05:00:00",
+        "schedule_id": "SCH-2026-000001"
+      }
+    },
+    {
+      "applicable": true,
+      "detected_constraint": "SEQUENCE_DEPENDENT_CHANGEOVER",
+      "detected_violation": true,
+      "expected_constraint": "SEQUENCE_DEPENDENT_CHANGEOVER",
+      "issue_type": "CHANGEOVER_OMITTED",
+      "messages": [
+        "SCH-2026-000006: changeover mismatch after SCH-2026-000001"
+      ],
+      "scenario_id": "EDGE-005",
+      "scenario_status": "PASS",
+      "test_passed": true,
+      "witness": {
+        "previous_schedule_id": "SCH-2026-000001",
+        "required_minutes": 34,
+        "schedule_id": "SCH-2026-000006"
+      }
+    }
+  ],
+  "scenario_count": 5,
+  "skipped_count": 0,
+  "status": "PASS"
+}

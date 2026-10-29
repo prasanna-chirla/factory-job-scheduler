@@ -1,0 +1,6 @@
+scenario_id,issue_type,expected_violation,expected_constraint,applicable,scenario_status,witness_json
+EDGE-001,MACHINE_OVERLAP,True,NO_MACHINE_OVERLAP,True,PASS,"{""machine_id"": ""MACH-001"", ""schedule_ids"": [""SCH-2026-000001"", ""SCH-2026-000002""]}"
+EDGE-002,PRECEDENCE_VIOLATION,True,ROUTING_PRECEDENCE,True,PASS,"{""predecessor"": ""SCH-2026-001629"", ""successor"": ""SCH-2026-001630""}"
+EDGE-003,MATERIAL_EARLY_CONSUMPTION,True,MATERIAL_AVAILABLE_BEFORE_START,True,PASS,"{""requirement_id"": ""REQ-ORD-2026-000037-01"", ""schedule_id"": ""SCH-2026-000001""}"
+EDGE-004,OUTSIDE_SHIFT,True,MACHINE_CALENDAR_COVERAGE,True,PASS,"{""proposed_start_at"": ""2026-01-10T05:00:00"", ""schedule_id"": ""SCH-2026-000001""}"
+EDGE-005,CHANGEOVER_OMITTED,True,SEQUENCE_DEPENDENT_CHANGEOVER,True,PASS,"{""previous_schedule_id"": ""SCH-2026-000001"", ""required_minutes"": 34, ""schedule_id"": ""SCH-2026-000006""}"

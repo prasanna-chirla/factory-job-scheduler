@@ -1,0 +1,66 @@
+[
+  {
+    "applicable": true,
+    "expected_constraint": "NO_MACHINE_OVERLAP",
+    "expected_violation": true,
+    "issue_type": "MACHINE_OVERLAP",
+    "scenario_id": "EDGE-001",
+    "scenario_status": "PASS",
+    "witness": {
+      "machine_id": "MACH-001",
+      "schedule_ids": [
+        "SCH-2026-000001",
+        "SCH-2026-000002"
+      ]
+    }
+  },
+  {
+    "applicable": true,
+    "expected_constraint": "ROUTING_PRECEDENCE",
+    "expected_violation": true,
+    "issue_type": "PRECEDENCE_VIOLATION",
+    "scenario_id": "EDGE-002",
+    "scenario_status": "PASS",
+    "witness": {
+      "predecessor": "SCH-2026-001629",
+      "successor": "SCH-2026-001630"
+    }
+  },
+  {
+    "applicable": true,
+    "expected_constraint": "MATERIAL_AVAILABLE_BEFORE_START",
+    "expected_violation": true,
+    "issue_type": "MATERIAL_EARLY_CONSUMPTION",
+    "scenario_id": "EDGE-003",
+    "scenario_status": "PASS",
+    "witness": {
+      "requirement_id": "REQ-ORD-2026-000037-01",
+      "schedule_id": "SCH-2026-000001"
+    }
+  },
+  {
+    "applicable": true,
+    "expected_constraint": "MACHINE_CALENDAR_COVERAGE",
+    "expected_violation": true,
+    "issue_type": "OUTSIDE_SHIFT",
+    "scenario_id": "EDGE-004",
+    "scenario_status": "PASS",
+    "witness": {
+      "proposed_start_at": "2026-01-10T05:00:00",
+      "schedule_id": "SCH-2026-000001"
+    }
+  },
+  {
+    "applicable": true,
+    "expected_constraint": "SEQUENCE_DEPENDENT_CHANGEOVER",
+    "expected_violation": true,
+    "issue_type": "CHANGEOVER_OMITTED",
+    "scenario_id": "EDGE-005",
+    "scenario_status": "PASS",
+    "witness": {
+      "previous_schedule_id": "SCH-2026-000001",
+      "required_minutes": 34,
+      "schedule_id": "SCH-2026-000006"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+tool_id,name,copies,status
+TOOL-MILL-JIG,Shared milling jig,4,ACTIVE
+TOOL-CALIBRATION,Calibration gauge,2,ACTIVE
